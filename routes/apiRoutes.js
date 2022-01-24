@@ -1,23 +1,25 @@
-// global requirements
 const router = require("express").Router();
 const { notes } = require("../db/db.json");
 const { createNewNote, deleteNote } = require("../lib/notes");
 
-// GET req for notes.html
 router.get("/notes", (req, res) => {
     if (notes) {
         res.send(notes);
     } else {
-        res.json("close");
+        res.json("goodbye");
     }
 }); 
-// GET * returning index.html
+
 router.post("/notes", (req, res) => {
     req.body.id = notes.length.toString();
 
-    const note = createNewNote(req.body, notes);
+    // if (!validateZookeeper(req.body)) {
+    //     res.status(400).send("The zookeeper is not properly formatted.");
+    // } else {
+        const note = createNewNote(req.body, notes);
 
-    res.json(note);
+        res.json(note);
+    // }
 });
 
 router.delete("/notes/:id", (req, res) => {

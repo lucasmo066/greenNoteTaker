@@ -1,6 +1,24 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+{
+    "notes": [
+      {
+        "title": "Shopping List",
+        "text": "- Milk\n- Eggs\n- Cookies\n- Brownie Mix",
+        "id": "0"
+      },
+      {
+        "title": "Upcoming Birthdays",
+        "text": "- Jim: Jan 30\n- Pam: Feb 12\n- Dwight: Feb 15\n- Michael: March 3\n",
+        "id": "1"
+      },
+      {
+        "title": "Reminder!!",
+        "text": "**Make doctor's appointment",
+        "id": "2"
+      },
+      {
+        "title": "Things to do: ",
+        "text": "- Rescue Princess Peach\n- Save Hyrule\n- Clear mansion of ghosts\n- Get an army of little plant creatures to rebuild my spaceship",
+        "id": "3"
+      }
+    ]
+  }
